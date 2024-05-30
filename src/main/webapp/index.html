@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="indexstyle.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="header">
+            <h1 >Hospital Management System</h1>
+        </div>
+        <div class="navbar">
+            <div class="navbar-index">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="navbar-about">
+                <a href="about.html">About</a>
+            </div>
+            <div class="navbar-contactus">
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="content">
+            <!-- <h1>Welcome to Hospital Management System</h1> -->
+            <div class="content-wrapper">
+                <div class="login">
+                    <form id = "form" action = "Login" method = "post">
+                    <h1>Login</h1>
+                    
+                        <div class="input-box">
+                            <input type="email" name = "username" placeholder="Email" id = "username" required>
+                            
+                        </div>
+                        <div class="input-box">
+                            <input type="password" placeholder = "password" name = "pass" id = "password" required>
+                        </div>
+                        <div id = "errorMessage" class = "errorMessage" style = "display:none" >
+                        	Invalid username or password
+                        	
+                        </div>
+                        
+                        <div class="remember-forget">
+                            <label >
+                                <input type="checkbox">Remember me</label>
+                            <a href="#">Forget Password?</a>
+                        </div>
+                        <button type = "submit"  class = "btn">submit</button>
+                        <div class="register-link">
+                            <p>Don't have an account? <a href="signup.html">Register</a></p>
+                        </div>
+                        <script>
+                        
+                        const urlParams = new URLSearchParams(window.location.search);
+                        if (urlParams.has('error')) {
+                            document.getElementById('error').style.display = 'block';
+                        }
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

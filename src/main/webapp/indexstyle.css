@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "Poppins", "Sans-serif";
+
+}
+body {
+    background:url("https://www.hospitaltimes.co.uk/wp-content/uploads/2020/09/image-1LL.jpg") no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.header h1 {
+    text-align: center;
+    /* background-color: red; */
+    padding:10px;
+}
+.navbar,.header {
+    background-color: transparent;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: left;
+    border: 1px solid rgba(255, 255, 255,.2);
+    padding:20px;
+}
+.navbar a{
+    
+    text-decoration: none;
+    color:black ;
+    padding: 10px;
+    margin:2px;
+    align-items: left;
+}
+.navbar a:hover{
+    text-decoration: underline;
+    color:blue;
+    transition: all;
+}
+.content .content-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: seagreen; */
+    height: 70vh;
+}
+
+.content-wrapper .login{
+    width: 420px;
+    background-color: transparent;
+    border:2px solid rgba(255, 255, 255,.2);
+    color:white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+.login h1{
+    font-size:36px;
+    text-align: center;
+}
+.login .input-box{
+    width: 100%;
+    height: 40px;
+    margin: 30px 0;
+    
+}
+
+.login .input-box input{
+    border: none;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255,.9);
+    border-radius: 40px;
+    padding: 20px 20px 20px 30px;
+}
+
+
+.login .errorMessage{
+	color:red;
+	padding:10px 0;
+    margin-top:-10px;
+    text-align: center;
+
+}
+.input-box input::placeholder{
+    color:white;
+    font-size: 15px;
+}
+
+
+.login .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin:-15px 0 15px;
+}
+
+.remember-forget label input{
+    margin-right: 3px;
+
+}
+.remember-forget a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.remember-forget a:hover{
+    text-decoration: underline;
+    color:blue;
+    transition: all;
+}
+
+.login .btn{
+    width: 100%;
+    height:40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color:#333;
+    font-weight: 600;
+}
+
+.login .register-link{
+    text-align: center;
+    margin-top:10px;
+}
+.register-link a{
+    text-decoration: none;
+    color:white;
+}
+
+.register-link a:hover{
+    text-decoration: underline;
+    color:blue;
+    transition: all;
+}
