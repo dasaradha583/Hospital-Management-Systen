@@ -1,64 +1,59 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <link rel="stylesheet" href="indexstyle.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src=""></script>
     </head>
     <body>
-        <div class="header">
-            <h1 >Hospital Management System</h1>
-        </div>
-        <div class="navbar">
-            <div class="navbar-index">
-                <a href="index.html">Home</a>
-            </div>
-            <div class="navbar-about">
-                <a href="about.html">About</a>
-            </div>
-            <div class="navbar-contactus">
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-        <div class="content">
-            <!-- <h1>Welcome to Hospital Management System</h1> -->
-            <div class="content-wrapper">
-                <div class="login">
-                    <form id = "form" action = "Login" method = "post">
-                    <h1>Login</h1>
-                    
-                        <div class="input-box">
-                            <input type="email" name = "username" placeholder="Email" id = "username" required>
-                            
-                        </div>
-                        <div class="input-box">
-                            <input type="password" placeholder = "password" name = "pass" id = "password" required>
-                        </div>
-                        <div id = "errorMessage" class = "errorMessage" style = "display:none" >
-                        	Invalid username or password
-                        	
-                        </div>
-                        
-                        <div class="remember-forget">
-                            <label >
-                                <input type="checkbox">Remember me</label>
-                            <a href="#">Forget Password?</a>
-                        </div>
-                        <button type = "submit"  class = "btn">submit</button>
-                        <div class="register-link">
-                            <p>Don't have an account? <a href="signup.html">Register</a></p>
-                        </div>
-                        <script>
-                        
-                        const urlParams = new URLSearchParams(window.location.search);
-                        if (urlParams.has('error')) {
-                            document.getElementById('error').style.display = 'block';
-                        }
-                        </script>
-                    </form>
-                </div>
-            </div>
-        </div>
         
+       <div class="image-container">
+        <h1 style="text-align: center; color: rgb(8, 8, 9);">Welcome to Hosptial Management System</h1>
+        <nav>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+        
+        
+       </div>
+        <div class="description">
+            <section id="services" class="section" style="padding:10px 0px;">
+                <h2 style="color: blue;">Our Services</h2>
+                <ul>
+                    <li>Emergency Care: 24/7 emergency services for urgent medical needs.</li>
+                    <li>Inpatient and Outpatient Services: Comprehensive care for both admitted and day-patient needs.</li>
+                    <li>Surgical Services: Advanced surgical procedures with the latest technology.</li>
+                    <li>Maternity Care: Expert care for mothers and newborns, including prenatal and postnatal services.</li>
+                    <li>Pediatric Care: Specialized care for infants, children, and adolescents.</li>
+                    <li>Cardiology: Comprehensive heart care from diagnosis to treatment.</li>
+                    <li>Oncology: Cutting-edge cancer treatment and support services.</li>
+                    <li>Orthopedics: Treatment for musculoskeletal conditions, including sports injuries and joint replacements.</li>
+                    <li>Rehabilitation Services: Physical, occupational, and speech therapy to aid recovery.</li>
+                    <li>Mental Health Services: Counseling, therapy, and psychiatric services.</li>
+                </ul>
+            </section>
+            <section id="why-choose-us" class="section" style="padding:10px 0px;">
+                <h2 style="color:blue;">Why Choose Us?</h2>
+                <ul>
+                    <li>Experienced Staff: Our team includes some of the best doctors, nurses, and healthcare professionals.</li>
+                    <li>Advanced Technology: We use the latest medical technology for accurate diagnoses and effective treatments.</li>
+                    <li>Patient-Centered Care: We focus on personalized care tailored to each patient’s unique needs.</li>
+                    <li>Comprehensive Care: From routine check-ups to complex surgeries, we cover all aspects of health.</li>
+                    <li>Community Outreach: We are committed to improving the health of our community through various programs and services.</li>
+                </ul>
+            </section>
+            <section id="patient-info" class="section" style="padding:10px 0px;">
+                <h2 style="color:blue;" >Patient & Visitor Information</h2>
+                <ul>
+                    <li>Appointments: Easily book appointments online or by phone.</li>
+                    <li>Visitor Guidelines: Information on visiting hours and policies.</li>
+                    <li>Billing & Insurance: Details on billing procedures and accepted insurance plans.</li>
+                    <li>Patient Portal: Access your medical records, test results, and more through our secure online portal.</li>
+                </ul>
+            </section>
+        </div>
     </body>
 </html>
