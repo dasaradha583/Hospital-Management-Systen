@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="loginstyle.css">
-    <script src="login.js"></script>
+    
 </head>
 <body>
     <div class="image-container">
@@ -18,7 +17,7 @@
                 <a href="login.html">Login</a>
             </div>
         </nav>
-        <div class="container" id = "signUP">
+        <div class="container" id = "signUP" style="display: none;">
             <h1>Register</h1>
             <form action = "" method="post" id = "signup">
                 <div class="input-group">
@@ -45,7 +44,7 @@
                 
             </div>
         </div>
-        <div class="signIn" id = "signin" style="display: none;">
+        <div class="signIn" id = "signin" >
             <form action="" method="post">
                 <h1>Login</h1>
                 <div class="input-group">
@@ -61,8 +60,20 @@
             <div class="links">
                 <p>Don't have an account?</p>
                 <button id = "signUpButton">singUp</button>
-        </div>
+        	</div>
+    	</div>
     </div>
+    <script>
+        document.getElementById("signInButton").addEventListener("click", function(){
+            document.getElementById("signin").style.display = "block";
+            document.getElementById("signUP").style.display = "none";
+        });
+        document.getElementById("signUpButton").addEventListener("click", function(){
+            document.getElementById("signin").style.display = "none";
+            document.getElementById("signUP").style.display = "block";
+        }); 
+
+    </script>
     
 </body>
 </html>
